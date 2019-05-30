@@ -24,3 +24,6 @@ System.debug('make this work. ' +myDateString);
 String s1= ('shelley');
 String s2= ('doty');
 System.debug('?' +s1+s2);
+
+Date date1 = Date.today();
+System.debug('today is '+today);
