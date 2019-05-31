@@ -1,3 +1,8 @@
+/* this isn't actually code, just snippets that I created to test
+certain examples in Trailhead and Udemy
+*/
+
+
 Integer firstNum=(50*2);
 Integer secNum=(133*4);
 Integer thirdNum=56;
