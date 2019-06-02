@@ -97,3 +97,24 @@ System.debug('Found the following contacts:');
                                 System.debug(c.LastName + ', ' +c.FirstName);
                             }
                             
+// Insert contact for trailhead challenge
+Contact thisContact = new Contact(
+			Firstname='Brian',
+			Lastname= 'Dent',
+			Phone= '(619)852-4569',
+			Department= 'Mission Control',
+			Title= 'Mission Specialist - Neptune',
+			Email= 'briandent@trailhead.com');
+insert thisContact;
+
+// The actual challenge Query:
+
+List<List<sObject>> searchList = [FIND 'Crisis' IN ALL FIELDS
+                                 RETURNING Contact(FirstName, LastName,
+                                 Phone, Email, Description)];
+Contact[] searchContacts = (Contact[])searchList[0];
+System.debug('Found the following contacts:');
+                            for (Contact c : searchContacts) {
+                                System.debug(c.LastName + ', ' +c.FirstName);
+                            }
+                            
