@@ -84,4 +84,5 @@ System.debug(theseContacts.size() +' contct(s) returned.');
 //Log all values in the array of contacts
 System.debug(theseContacts);
 
-
+//SOSL search
+FIND {Crisis} IN ALL FIELDS RETURNING Contact(Firstname, Lastname, Phone, Email, Title)
