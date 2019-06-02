@@ -73,3 +73,15 @@ Contact contact3 = new Contact(
    Title='Control Engineer - Specialty - Radiators',
    Email='psunrise@trailhead.com');
 insert contact3;
+
+//SOQL Search
+SELECT Name, Phone, Email, Title FROM Contact WHERE (Department = 'Specialty Crisis Management') LIMIT 10
+	
+// Inline SOQL search
+Contact[] theseContacts = [SELECT Name, Phone, Email, Description FROM Contact WHERE (Department = 'Specialty Crisis Management') ORDER BY Name];
+//Log a count of how many contacts were found
+System.debug(theseContacts.size() +' contct(s) returned.');
+//Log all values in the array of contacts
+System.debug(theseContacts);
+
+
