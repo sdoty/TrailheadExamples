@@ -36,4 +36,11 @@ public class EmailMissionSpecialist {
        
 
     }
+
+// Example for ExecuteAnonymous
+
+EmailMissionSpecialist em = new EmailMissionSpecialist();
+em.sendMail('shelleyldoty@gmail.com', 'Flight Path Change',
+           'Mission Control 123: Your flight path has been changed to avoid collision '
+           + 'with asteroid 2014 Q0441.');
     
