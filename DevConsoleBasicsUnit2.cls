@@ -86,3 +86,14 @@ System.debug(theseContacts);
 
 //SOSL search
 FIND {Crisis} IN ALL FIELDS RETURNING Contact(Firstname, Lastname, Phone, Email, Title)
+
+//Inline SOSL search
+List<List<sObject>> searchList = [FIND 'Crisis' IN ALL FIELDS
+                                 RETURNING Contact(FirstName, LastName,
+                                 Phone, Email, Description)];
+Contact[] searchContacts = (Contact[])searchList[0];
+System.debug('Found the following contacts:');
+                            for (Contact c : searchContacts) {
+                                System.debug(c.LastName + ', ' +c.FirstName);
+                            }
+                            
