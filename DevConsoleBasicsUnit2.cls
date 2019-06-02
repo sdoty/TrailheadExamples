@@ -44,3 +44,32 @@ em.sendMail('shelleyldoty@gmail.com', 'Flight Path Change',
            'Mission Control 123: Your flight path has been changed to avoid collision '
            + 'with asteroid 2014 Q0441.');
     
+// Example for adding contacts to the database
+
+// Add first contact and related details
+Contact contact1 = new Contact(
+	Firstname= 'Quentin',
+	Lastname= 'Foam',
+	Phone= '(415)555-1212',
+	Department= 'Specialty Crisis Management',
+	Title= 'Control Engineer - Specialty - Solar Arrays',
+	Email= 'gfoam@trailhead.com');
+insert contact1;
+// Add second contact and related details
+Contact contact2 = new Contact(
+   Firstname='Vega',
+   Lastname='North',
+   Phone='(416)556-1312',
+   Department= 'Specialty Crisis Management',
+   Title='Control Engineer - Specialty - Propulsion',
+   Email='vnorth@trailhead.com');
+insert contact2;
+// Add third contact and related details
+Contact contact3 = new Contact(
+   Firstname='Palma',
+   Lastname='Sunrise',
+   Phone='(554)623-1212',
+   Department= 'Specialty Crisis Management',
+   Title='Control Engineer - Specialty - Radiators',
+   Email='psunrise@trailhead.com');
+insert contact3;
