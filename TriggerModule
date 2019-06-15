@@ -3,3 +3,20 @@ trigger TriggerName on ObjectName(trigger_events) {
 code_block
 }
 
+// Options
+
+    before insert
+    before update
+    before delete
+    after insert
+    after update
+    after delete
+    after undelete
+
+// An example:
+
+trigger HelloWorldTrigger on Account (before insert) {
+	System.debug('Hello World!');
+}
+
+
