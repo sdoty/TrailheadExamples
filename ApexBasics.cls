@@ -49,3 +49,5 @@ next example - sends an email to me...
 
 EmailManager em = new EmailManager();
 em.sendMail('Your email address', 'Trailhead Tutorial', '123 body');
+
+// add testing for branch management!
